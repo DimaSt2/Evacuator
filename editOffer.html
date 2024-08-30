@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evacuator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<main>
+    <header class="header">
+        <div class="logo">
+          <img src="img/Logo.svg" alt="logo" width="111px" height="111px" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a href="https://www.google.by/?hl=ru">
+          <button class="btnAddCard" type="button">Добавить объявление</button>
+        </a>
+        </nav>
+      </header>
+      <div class="banner h1 banner-edit-offer">
+        Создание объявления
+      </div>
+
+
+      <section class="editForm">
+
+        <div class="form__desc wrapper">
+          <svg width="154" height="100%" viewBox="0 0 104 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60.6674 27.1244H49.8326C48.1087 27.1244 46.4554 27.7368 45.2364 28.8268C44.0175 29.9169 43.3326 31.3953 43.3326 32.9369C43.3326 34.4785 44.0175 35.9569 45.2364 37.0469C46.4554 38.137 48.1087 38.7494 49.8326 38.7494H54.1674C55.8913 38.7494 57.5446 39.3618 58.7636 40.4518C59.9825 41.5419 60.6674 43.0203 60.6674 44.5619C60.6674 45.3252 60.4992 46.081 60.1726 46.7862C59.8459 47.4914 59.3671 48.1322 58.7636 48.6719C58.16 49.2117 57.4434 49.6398 56.6548 49.9319C55.8662 50.224 55.021 50.3744 54.1674 50.3744H43.3326M52 50.3744V54.2506M52 23.25V27.1244" stroke="#344054" stroke-width="2.08" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 81.375H78M86.6674 11.625H17.3326C14.9406 11.625 13 13.3604 13 15.4994V61.9994C13 64.1384 14.9406 65.8756 17.3326 65.8756H86.6674C89.0594 65.8756 91 64.1402 91 61.9994V15.4994C91 13.3604 89.0594 11.625 86.6674 11.625Z" stroke="#0297D4" stroke-width="2.08" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <p>Заполните все поля формы на размещение своего объявления на сайте. <br>
+            Размещение объявления платное. Стоимость за одно объявление составляет <span>990 руб.</span> <br>
+            Объявление будет опубликовано на сайте после оплаты и проверки модератором.</p>
+        </div>
+
+
+      </section>
+
+</main>
+
+
+<form action="" method="POST" id="form-info-NewPost" data="{&quot;type&quot;:&quot;info:NewPost&quot;}" enctype="multipart/form-data" class="js_form edit-post__form">
+    <input type="hidden" name="csrf" value="66d19fcf7e1c9">
+                <div class="edit-post__form-item js-p-city">
+        <label for="js-city-name" class="edit-post__form-label">Введите город:</label>
+        <input id="js-city-name" class="edit-post__form-input" type="text" value="Москва" autocomplete="off">
+        <input name="city" id="form-info-NewPost-city" class="edit-post__form-input" type="hidden" value="1" autocomplete="off" required="required">
+        <div class="edit-post__popup-btn"></div>
+        <!-- <div id="js-cities-ac"> -->
+                                    
+    <div class="edit-post__form-item js-p-texts">
+        <label for="form-info-NewPost-description" class="edit-post__form-label">Описание объявления:</label>
+        <textarea name="description" id="form-info-NewPost-description" class="edit-post__form-input" required="required" maxlength="600"></textarea>
+        <style>
+            #form-info-NewPost-description {
+                height: 200px;
+                box-sizing: border-box;
+                resize: none;
+            }
+        </style>
+        <div class="edit-post__form-info">Не более 600 символов</div>
+    </div>
+    
+    <div class="edit-post__form-section-separator"><span>Цены</span></div>
+    <div class="edit-post__form-item js-p-prices">
+        <label for="form-info-NewPost-cars" class="edit-post__form-label">Легковые автомобили:</label>
+        <input name="cars" id="form-info-NewPost-cars" class="edit-post__form-input edit-post_price" type="text" value="" autocomplete="off" required="required">
+        <label for="form-info-NewPost-cars" class="edit-post__form-label edit-post_after-input">Руб.</label>
+    </div>
+    <div class="edit-post__form-item js-p-prices">
+        <label for="form-info-NewPost-moto" class="edit-post__form-label">Мототехника:</label>
+        <input name="moto" id="form-info-NewPost-moto" class="edit-post__form-input edit-post_price disabled" type="text" value="" autocomplete="off">
+        <label for="form-info-NewPost-moto" class="edit-post__form-label edit-post_after-input">Руб.</label>
+        <label class="edit-post__form-label edit-post_checkbox"><input name="motoCheck" id="form-info-NewPost-motoCheck" type="checkbox" value="1"><label for="form-info-NewPost-motoCheck" class="edit-post__form-checkbox"></label>Услугу не оказываю</label>
+        <div class="edit-post__form-info">Поставьте здесь галочку, если вы не оказываете вид услуги</div>
+    </div>
+    <div class="edit-post__form-item js-p-prices">
+        <label for="form-info-NewPost-suv" class="edit-post__form-label">Внедорожник:</label>
+        <input name="suv" id="form-info-NewPost-suv" class="edit-post__form-input edit-post_price disabled" type="text" value="" autocomplete="off">
+        <label for="form-info-NewPost-suv" class="edit-post__form-label edit-post_after-input">Руб.</label>
+        <label class="edit-post__form-label edit-post_checkbox"><input name="suvCheck" id="form-info-NewPost-suvCheck" type="checkbox" value="1"><label for="form-info-NewPost-suvCheck" class="edit-post__form-checkbox"></label>Услугу не оказываю</label>
+    </div>
+    <div class="edit-post__form-item js-p-prices">
+        <label for="form-info-NewPost-micro" class="edit-post__form-label">Микроавтобус:</label>
+        <input name="micro" id="form-info-NewPost-micro" class="edit-post__form-input edit-post_price disabled" type="text" value="" autocomplete="off">
+        <label for="form-info-NewPost-micro" class="edit-post__form-label edit-post_after-input">Руб.</label>
+        <label class="edit-post__form-label edit-post_checkbox"><input name="microCheck" id="form-info-NewPost-microCheck" type="checkbox" value="1"><label for="form-info-NewPost-microCheck" class="edit-post__form-checkbox"></label>Услугу не оказываю</label>
+    </div>
+    <div class="edit-post__form-item js-p-prices">
+        <label for="form-info-NewPost-out" class="edit-post__form-label">Загород:</label>
+        <input name="out" id="form-info-NewPost-out" class="edit-post__form-input edit-post_price disabled" type="text" value="" autocomplete="off">
+        <label for="form-info-NewPost-out" class="edit-post__form-label edit-post_after-input">Руб./км.</label>
+        <label class="edit-post__form-label edit-post_checkbox"><input name="outCheck" id="form-info-NewPost-outCheck" type="checkbox" value="1"><label for="form-info-NewPost-outCheck" class="edit-post__form-checkbox"></label>Услугу не оказываю</label>
+    </div>
+    <div class="edit-post__form-section-separator"><span>Фото</span></div>
+    <div class="edit-post__form-item edit-post__form-photo js-p-photo">
+   <label for="form-info-NewPost-image" class="edit-post__form-label">Фотография:</label>
+        <label for="form-info-NewPost-image" class="edit-post__form-file-btn">Загрузить</label> 
+        
+        <input name="image" id="form-info-NewPost-image" class="edit-post__form-fileinput" type="file" value="" accept="image/*">
+        <span style="display: none">или</span>
+        <input hidden="" type="text" name="photo-link" id="" class="edit-post__form-input edit-post__form-photo-textinput" placeholder="Вставьте ссылку на фото...">
+                        <input name="remove_image" id="form-info-NewPost-remove_image" class="js-p-image-remove" type="hidden" value="0" autocomplete="off">
+        <div style="margin:10px 0 10px 270px"><img src="" width="200" height="150" alt="" style="display:none" class="js-p-preview"></div>
+    </div>
+    
+                <div class="edit-post__form-item edit-post__form-rules js-p-rules">
+        <label class="edit-post__form-label">
+            <input type="checkbox" name="agreement" id="edit-post-rules-agreement">
+            <label for="edit-post-rules-agreement" class="edit-post__form-checkbox"></label>
+        </label>
+        <p class="edit-post__rules-text">Я соглашаюсь с <a href="/polzovatelskoe-soglasheni/">правилами</a> использования сервиса, а также с передачей и обработкой моих данных в <a href="https://evarus.ru">evarus.ru</a><br>Я подтверждаю своё совершеннолетие и ответственность за размещение</p>
+    </div>
+                <div class="edit-post__form-item"><button class="edit-post__form-submit blue-button">Продолжить</button></div>
+    <div class="edit-post__form-errors" style="display:none">Выделенные поля не заполнены, либо заполнены некорректно</div>
+    <div class="form-success success">Изменения сохранены</div>
+    <div class="form-fail fail">Ошибка</div>
+</form>
