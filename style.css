@@ -17,8 +17,6 @@
     font-family: "SF Pro Text Medium";
     src: url("fonts/SFProText-Medium.ttf");
 }
-
-
   
 :root {
 	--main-blue: #0297d4;
@@ -31,7 +29,6 @@
     /* --second-family: "SF Pro Rounded", sans-serif; */
   }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,29 +36,18 @@
     font-family: var(--font-family)
 }
 
-
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1920px;
-    height: 12122px;
     background: #f3f6f9;
     margin: 0 auto;
-
-
-    border: 2px solid green;
-
 }
 
 .wrapper {
     max-width: 1400px;
-    /* height: 596px; */
     margin: 0 auto;
-
-    /* border: 2px solid green; */
-
 }
 
 /* хедер */
@@ -72,33 +58,23 @@ main {
     align-items: center;
     width: 100%;
     padding: 0 100px;
-    border: 2px solid green;
-
 }
 
 .nav {
     display: flex;
     gap: 135px;
-
-    border: 2px solid green;
 }
-
 
 .nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     margin: auto;
-
     width: 305px;
     height: 24px;
-
-
-    
 }
 
 .nav ul a {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     text-transform: uppercase;
@@ -111,20 +87,44 @@ main {
     padding: 16px 36px;
     width: 335px;
     height: 56px;
-
-    /* font-family: var(--font-family); */
     font-weight: 600;
-    /*в figma размер 20px, но текст тогда не помещается*/
     font-size: 19px;  
     text-transform: uppercase;
     color: #fff;
     background: var(--main-blue);
     border: none;
-
     cursor: pointer;
 }
 
 /* хедер конец */
+
+/* футер начало */
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    width: 100%;
+    height: 240px;
+    background: #586c75;
+    padding: 41px 260px 87px;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 63.5px;
+    list-style-type: none;
+}
+
+.nav-links ul a {
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+text-decoration: none;
+}
+
+/* футер конец */
 
 .banner {
     display: flex;
@@ -132,9 +132,6 @@ main {
     align-items: center;
     width: 100%;
     height: 202px;
-    
-
-    
     background-image: url('img/banner-main.jpg');
 }
 
@@ -148,7 +145,6 @@ h1, .h1 {
     color: #fff;
 }
 
-
 .banner a {
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -159,7 +155,6 @@ h1, .h1 {
 
 section.cards {
     display: flex;
-    /* width: 100%; */
     flex-direction: column;
     align-items: center;
     gap: 60px;
@@ -170,12 +165,9 @@ section.cards {
 display: flex;
 flex-direction: column;
 gap: 28px;
-
 border-radius: 20px;
 padding: 40px 48px;
 width: 100%;
-/* height: 526px; */
-
 box-shadow: 2px 2px 10px 2px rgba(39, 52, 58, 0.15);
 background: #fff;
 }
@@ -197,18 +189,14 @@ color: var(--dark);
     border-radius: 10px;
     width: 414px;
     height: 328px;
-
-    /* background: url("img/Photo.jpg"); */
 }
 
 .types__cars {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     width: 498px;
     height: 328px;
-
 }
 
 .type__car {
@@ -216,7 +204,6 @@ color: var(--dark);
     justify-content: space-between;
     align-items: center;
     background: #f2f4f8;
-
     border-radius: 10px;
     padding: 16px 20px;
     width: 498px;
@@ -233,7 +220,6 @@ color: var(--dark);
 .contacts {
     display: flex;
     flex-direction: column;
-    
     width: 336px;
     height: 328px;
     gap: 21.5px;
@@ -254,28 +240,19 @@ color: var(--dark);
     padding: 16px 36px;
     width: 335px;
     height: 56px;
-
     background: var(--main-blue);
-
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
     color: #fff;
-
     cursor: pointer;
-
     border: none;
 }
-
-/* .phone__img {
-    background-image: url('img/fluent_call-24-filled.svg');
-} */
 
 .address {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
     border-radius: 10px;
 padding: 16px 20px;
 width: 336px;
@@ -352,7 +329,7 @@ color: var(--dark);
     justify-content: center;
     align-items: center;
     /* margin: auto; */
-
+user-select: none;
     border: 1px solid var(--main-blue);
 border-radius: 6px;
 padding: 10px;
@@ -408,6 +385,7 @@ margin: 0 155px 0 30px;
 section.editForm {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
 
 
 
@@ -423,9 +401,260 @@ section.editForm {
     font-size: 26px;
     color: var(--dark);
 
+    margin-bottom: 60px;
+
     border: 1px solid red;
 }
 
 .form__desc span{
     font-weight: 700;
 }
+
+form.form__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 53px;
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 798px;
+
+    border: 1px solid red;
+}
+
+.form__block-elem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.city svg {
+    position: absolute;
+    top: 51.5px;
+    right: 16.5px;
+}
+
+.offer__label {
+font-weight: 400;
+font-size: 22px;
+color: #4a585e;
+
+margin-bottom: 12px;
+}
+
+.offer__input {
+    border: 0.50px solid var(--main-blue);
+border-radius: 10px;
+padding: 11px 24px 12px 24px;
+width: 798px;
+height: 56px;
+
+background: #fff;
+
+font-weight: 400;
+font-size: 26px;
+color: var(--dark);
+}
+
+
+.offer__input:focus {
+    outline: none;
+    border-color: #b80101;
+}
+
+
+.offer__input::placeholder {
+font-weight: 400;
+font-size: 26px;
+color: #b3c8d1;
+}
+
+.form__block-header {
+    position: relative;
+font-weight: 400;
+font-size: 26px;
+color: #4a585e;
+text-transform: uppercase;
+}
+
+.form__block-header::before {
+    position: absolute;
+    content: '';
+  /* display: inline-block; */
+  /* margin-right: 5px; */
+  width: 584px;
+  height: 1px;
+  background: url('img/form-Vector.svg');
+  /* background-size: contain; */
+
+  top: 15px;
+  left: -605px;
+}
+.form__block-header::before {
+    position: absolute;
+    content: '';
+  /* display: inline-block; */
+  /* margin-right: 5px; */
+  width: 584px;
+  height: 1px;
+  background: url('img/form-Vector.svg');
+  /* background-size: contain; */
+
+  top: 15px;
+  left: -605px;
+}
+.form__block-header::before {
+    position: absolute;
+    content: '';
+  /* display: inline-block; */
+  /* margin-right: 5px; */
+  width: 584px;
+  height: 1px;
+  background: url('img/form-Vector.svg');
+  /* background-size: contain; */
+
+  top: 15px;
+  left: -605px;
+}
+
+.form__block-header::after {
+    position: absolute;
+    content: '';
+  width: 584px;
+  height: 1px;
+  background: url('img/form-Vector.svg');
+  top: 15px;
+  right: -605px;
+}
+
+textarea#description {
+    height: 346px;
+    resize: none;
+}
+
+.offer__price {
+    width: 322px;
+    margin-right: 16px;
+}
+
+.price__label {
+font-weight: 400;
+font-size: 22px;
+color: #4a585e;
+/* margin-left: 16px; */
+}
+
+.setPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.check__label {
+    position: relative;
+    padding-left: 15px;
+font-weight: 400;
+font-size: 22px;
+color: #4a585e;
+    
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -20px;
+    appearance: none;
+}
+
+
+.check__box {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('img/check__off.svg');
+    left: -20px;
+}
+
+/* checked */
+
+.check__input:checked + .check__box {
+    background-image: url('img/check__on.svg');
+}
+
+.photo__file {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.load {
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    border: 2px solid var(--main-blue);
+    border-radius: 50px;
+    padding: 16px 36px;
+    width: 335px;
+    height: 56px;
+
+font-weight: 600;
+font-size: 20px;
+text-transform: uppercase;
+color: var(--main-blue);
+}
+
+
+.personal-data-agree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    width: 798px;
+margin-bottom: 75px;
+    margin-top: 60px;
+    border: 1px solid green;
+
+    user-select: none;
+}
+
+.check-personal-data {
+    padding-left: 20px;
+    /* text-align: justify; */
+}
+
+.check-personal-data .check__box {
+    top: 29px;
+}
+
+.continue {
+    width: 153px;
+height: 24px;
+
+cursor: pointer;
+
+border-radius: 50px;
+padding: 16px 36px;
+width: 335px;
+height: 56px;
+background: var(--main-blue);
+font-weight: 600;
+font-size: 20px;
+text-transform: uppercase;
+color: #fff;
+}
+
+.agree-desc {
+    display: block;
+    padding-left: 15px;
+}
+
+
